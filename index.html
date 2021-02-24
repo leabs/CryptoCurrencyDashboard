@@ -7,31 +7,31 @@ layout: home
 {% include prices.html %}
 </div>
 {% include about.html %}
+<section class="section">
+<div class="container">
   <div class="columns">
     <div class="column">
       <h3 class="h3">Blog Posts</h3>
-      <div class="column">
-        <ul>
+        <ul style="">
           {% for post in site.posts %}
           <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}" style="text-decoration: underline;">{{ post.title }}</a>
           </li>
           {% endfor %}
         </ul>
-      </div>
     </div>
     <div class="column">
       <h3 class="h3">RSS Feed from r/CryptoCurrency</h3>
-      <div class="column">
         <script
           type="text/javascript"
           language="javascript"
           src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.reddit.com%2Fr%2FCryptoCurrency.rss&amp;mode=javascript&amp;showonly=&amp;maxitems=10&amp;showdescs=0&amp;desctrim=0&amp;descmax=0&amp;tabwidth=100%25&amp;linktarget=_blank&amp;bordercol=%23d4d0c8&amp;headbgcol=%23999999&amp;headtxtcol=%23ffffff&amp;titlebgcol=%23f1eded&amp;titletxtcol=%23000000&amp;itembgcol=%23ffffff&amp;itemtxtcol=%23000000&amp;ctl=0"
         ></script>
-      </div>
     </div>
   </div>
 </div>
+</section>
+
 
 
 

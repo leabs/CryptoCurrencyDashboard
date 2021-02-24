@@ -57,6 +57,31 @@ html {
   margin-top: 5px;
 }
 
+.rssdog {
+  border-color: transparent !important;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif !important;
+  font-weight: 300 !important;
+}
+.rssdog td {
+  background-color: whitesmoke !important;
+  padding-bottom: 16px;
+}
+
+.rssdog a {
+  text-decoration: underline;
+  color: #3273dc !important;
+}
+
+.rssdog a:hover {
+  color: #363636 !important;
+}
+
+.rssdog tr:first-child {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .refresh-button {
     margin-top: 0;
