@@ -48,3 +48,7 @@ html{
     /* Resize the background image to cover the entire container */
     opacity: 1;
 }
+
+.has-text-center{
+    text-align: center;
+}

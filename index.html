@@ -2,14 +2,16 @@
 layout: home
 ---
 
+{% include header.html %}
 <!--Homepage dashboard-->
-<div>
-  <h2 class="h2">
+<section class="section">
+  <div class="container">
+  <h4 class="h4">
     Current Prices
     <a onClick="window.location.reload()"
-      ><img src="assets/img/refresh.png" style="height: 24px" alt="refresh" />
+      ><img src="assets/img/refresh.png" style="height: 20px" alt="refresh" />
     </a>
-  </h2>
+  </h4>
   <br />
   <div class="columns">
     <!--Bitcoin card current price-->
@@ -37,6 +39,8 @@ layout: home
       </div>
     </div>
   </div>
+  
+  
   <div class="columns">
     <div class="column">
       <div class="box">
@@ -44,6 +48,9 @@ layout: home
       </div>
     </div>
   </div>
+</section>
+</div>
+{% include about.html %}
   <div class="columns">
     <div class="column">
       <h3 class="h3">Blog Posts</h3>
@@ -69,6 +76,8 @@ layout: home
     </div>
   </div>
 </div>
+
+
 
 <script>
   //Fetch the price of Ethereum
@@ -212,7 +221,7 @@ layout: home
           slantLabels: "1",
           numdisplaysets: "10",
           labeldisplay: "rotate",
-          showValues: "1",
+          showValues: "0",
           showRealTimeValue: "0",
           theme: "fusion",
           yAxisMaxValue: bitcoinDataHandler().toString() + 20,

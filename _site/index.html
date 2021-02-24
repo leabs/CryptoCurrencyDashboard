@@ -1,62 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Bitcoin Ticker</title>
-    <link rel="stylesheet" href="https://ds.fusioncharts.com/2.0.8/css/ds.css">
-    <link rel="stylesheet" href="../assets/bulma/css/bulma.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bitcoin Ticker</title>
+    <link
+      rel="stylesheet"
+      href="https://ds.fusioncharts.com/2.0.8/css/ds.css"
+    />
+    <link rel="stylesheet" href="../assets/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <script src="https://ds.fusioncharts.com/2.0.8/js/ds.js"></script>
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-</head>
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"
+    ></script>
+  </head>
 
-<body>
-    <nav class="navbar is-link hide-on-mobile">
-    <div class="container">
-        <div id="navMenu" class="navbar-menu">
-            <div class="navbar-start">
-                <a href="/" class="navbar-item">
-                    CoinBump
-                </a>
-                <a href="/about" class="navbar-item">
-                    About
-                </a>
-                <a href="/rss" class="navbar-item">
-                    Reddit RSS Feed
-                </a>
-                <a href="/blog" class="navbar-item">
-                    Blog
-                </a>
-            </div>
+  <body>
+    <main class="has-background-light"><section class="hero is-small is-primary has-text-center">
+  <div class="hero-body">
+    <p class="title">CryptoCurrency Dashboard</p>
+    <p class="subtitle">
+      Follow the latest prices, news, and trends with the CryptoCurrency market.
+    </p>
+  </div>
+</section>
 
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a href="https://github.com/leabs/CryptoCurrencyDashboard" class="button is-primary">Github</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
-    <main class="has-background-light">
-        <section class="section">
-            <div class="container">
-                <!--Homepage dashboard-->
-<div>
-  <h2 class="h2">
+<!--Homepage dashboard-->
+<section class="section">
+  <div class="container">
+  <h4 class="h4">
     Current Prices
     <a onClick="window.location.reload()"
-      ><img src="assets/img/refresh.png" style="height: 24px" alt="refresh" />
+      ><img src="assets/img/refresh.png" style="height: 20px" alt="refresh" />
     </a>
-  </h2>
+  </h4>
   <br />
   <div class="columns">
     <!--Bitcoin card current price-->
@@ -84,6 +69,8 @@
       </div>
     </div>
   </div>
+  
+  
   <div class="columns">
     <div class="column">
       <div class="box">
@@ -91,6 +78,31 @@
       </div>
     </div>
   </div>
+</section>
+</div>
+<!--About Section-->
+<section class="section" style="background-color: white">
+  <div class="container has-text-center">
+    <h2 class="h2 has-text-center">About</h2>
+    <h4 class="h4">
+      Tools I used to make this website, and where you can find more
+      information.
+    </h4>
+    <p class="has-text-center">This site</p>
+    <br />
+    <div class="has-text-center">
+      <div class="buttons has-text-center">
+        <a
+          href="https://github.com/leabs/CryptoCurrencyDashboard"
+          class="button is-primary"
+          target="_blank"
+          >Github</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
   <div class="columns">
     <div class="column">
       <h3 class="h3">Blog Posts</h3>
@@ -116,6 +128,8 @@
     </div>
   </div>
 </div>
+
+
 
 <script>
   //Fetch the price of Ethereum
@@ -259,7 +273,7 @@
           slantLabels: "1",
           numdisplaysets: "10",
           labeldisplay: "rotate",
-          showValues: "1",
+          showValues: "0",
           showRealTimeValue: "0",
           theme: "fusion",
           yAxisMaxValue: bitcoinDataHandler().toString() + 20,
@@ -307,12 +321,6 @@
     fusioncharts.render();
   });
 </script>
-
-            </div>
-        </section>
-    </main>
-
-
-</body>
-
+</main>
+  </body>
 </html>
