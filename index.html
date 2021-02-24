@@ -208,7 +208,7 @@ layout: home
           xAxisName: "Local Time",
           yAxisName: "USD",
           numberPrefix: "$",
-          refreshinterval: "1",
+          refreshinterval: "2",
           slantLabels: "1",
           numdisplaysets: "10",
           labeldisplay: "rotate",
@@ -250,7 +250,7 @@ layout: home
           }
           e.sender.chartInterval = setInterval(function () {
             updateData();
-          }, time_interval * 1000);
+          }, time_interval * 2000);
         },
         disposed: function (evt, arg) {
           clearInterval(evt.sender.chartInterval);
