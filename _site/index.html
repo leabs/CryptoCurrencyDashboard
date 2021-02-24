@@ -24,80 +24,140 @@
   </head>
 
   <body>
-    <main class="has-background-light"><section class="hero is-small is-primary has-text-center">
+    <main class="has-background-light"><section class="hero is-small is-link has-text-center has-text-left-mobile">
   <div class="hero-body">
-    <p class="title">CryptoCurrency Dashboard</p>
+    <p class="title">Crypto Currency Dashboard</p>
     <p class="subtitle">
-      Follow the latest prices, news, and trends with the CryptoCurrency market.
+      Follow the Latest Prices and News within the CryptoCurrency Market.
     </p>
   </div>
 </section>
 
 <!--Homepage dashboard-->
 <section class="section">
-  <div class="container">
-  <h4 class="h4">
-    Current Prices
-    <a onClick="window.location.reload()"
-      ><img src="assets/img/refresh.png" style="height: 20px" alt="refresh" />
-    </a>
-  </h4>
-  <br />
-  <div class="columns">
-    <!--Bitcoin card current price-->
-    <div class="column">
-      <div class="box bitcoin-box">
-        <div class="h3">Bitcoin(BTC)</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="btc_val" class="h4 kpi-value"></div>
+    <div class="container">
+    <div class="columns">
+      <!--Bitcoin card current price-->
+      <div class="column">
+        <div class="box bitcoin-box">
+          <div class="h3">Bitcoin(BTC) 
+            <button class="button is-rounded is-small refresh-button">
+              <span class="icon">
+                <a style="text-decoration: underline" alt="refesh button" onClick="window.location.reload()">
+                  <img src="assets/img/refresh.png" style="height: 16px" alt="refresh" />
+                </a>
+              </span>
+            </button>
+          </div>
+          <div class="h5">(Price in USD)</div>
+          <div id="btc_val" class="h4 kpi-value"></div>
+        </div>
+      </div>
+      <!--Ethereum card current price-->
+      <div class="column">
+        <div class="box ethereum-box">
+          <div class="h3">Ethereum 
+            <button class="button is-rounded is-small refresh-button">
+              <span class="icon">
+                <a style="text-decoration: underline" alt="refesh button" onClick="window.location.reload()">
+                  <img src="assets/img/refresh.png" style="height: 16px" alt="refresh" />
+                </a>
+              </span>
+            </button>
+          </div>
+          <div class="h5">(Price in USD)</div>
+          <div id="eth_val" class="h4 kpi-value"></div>
+        </div>
+      </div>
+      <!--Litecoin card current Price-->
+      <div class="column">
+        <div class="box litecoin-box">
+          <div class="h3">Litecoin(LTC) 
+            <button class="button is-rounded is-small refresh-button">
+              <span class="icon">
+                <a style="text-decoration: underline" alt="refesh button" onClick="window.location.reload()">
+                  <img src="assets/img/refresh.png" style="height: 16px" alt="refresh" />
+                </a>
+              </span>
+            </button>
+          </div>
+          <div class="h5">(Price in USD)</div>
+          <div id="ltc_val" class="h4 kpi-value"></div>
+        </div>
       </div>
     </div>
-    <!--Ethereum card current price-->
-    <div class="column">
-      <div class="box ethereum-box">
-        <div class="h3">Ethereum</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="eth_val" class="h4 kpi-value"></div>
+    
+    
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <div id="chart-container"></div>
+        </div>
       </div>
     </div>
-    <!--Litecoin card current Price-->
-    <div class="column">
-      <div class="box litecoin-box">
-        <div class="h3">Litecoin(LTC)</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="ltc_val" class="h4 kpi-value"></div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="columns">
-    <div class="column">
-      <div class="box">
-        <div id="chart-container"></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 </div>
 <!--About Section-->
 <section class="section" style="background-color: white">
-  <div class="container has-text-center">
-    <h2 class="h2 has-text-center">About</h2>
-    <h4 class="h4">
-      Tools I used to make this website, and where you can find more
-      information.
-    </h4>
-    <p class="has-text-center">This site</p>
+  <div class="container has-text-center has-text-left-mobile">
+    <h2 class="h2">About this Dashboard</h2>
+    <p class="">
+      This dashboard outputs static html for a fast and secure connection using
+      <a href="https://jekyllrb.com/" alt="Jekyll homepage" target="_blank"
+        >Jekyll<img
+          src="assets/img/external.png"
+          style="height: 16px"
+          alt="external link" /></a
+      >, a static site generator built with Ruby. For the style framework I used
+      <a href="https://bulma.io/" alt="bulma's homepage" target="_blank"
+        >Bulma<img
+          src="assets/img/external.png"
+          style="height: 16px"
+          alt="external link" /></a
+      >, a simple no hassle (and JS free) responsive solution. The data for the
+      current Crypto prices is coming from
+      <a
+        href="https://www.cryptonator.com/"
+        target="_blank"
+        alt="Cryptonator's homepage"
+        >Cryptonator<img
+          src="assets/img/external.png"
+          style="height: 16px"
+          alt="external link" /></a
+      >'s API, and finally the chart library is rendered with
+      <a href="fusioncharts.com" target="_blank" alt="Fusion Chart Homepage"
+        >fusioncharts<img
+          src="assets/img/external.png"
+          style="height: 16px"
+          alt="external link" /></a
+      >.
+    </p>
+    <br />
+    <p>
+      I made this dashboard because the whole conversation about crypto currency
+      facinates me. The idea that people can buy into a construct like crypto
+      and decide it has inherent value is wild, as are the stories of those who
+      bought in early to become millionaires, or those who have coins in cold
+      storage and forgot the password to their vault.
+    </p>
+    <br />
+    <p>
+      I have purchased a small amount, as well as started to mine with my home
+      pc in an effort to have some small seat on this wild ride.
+    </p>
     <br />
     <div class="has-text-center">
-      <div class="buttons has-text-center">
+      <div class="buttons has-text-center is-centered">
         <a
           href="https://github.com/leabs/CryptoCurrencyDashboard"
-          class="button is-primary"
+          class="button is-warning"
           target="_blank"
-          >Github</a
-        >
+          >Github
+          <img
+            src="assets/img/external.png"
+            style="height: 16px"
+            alt="external link"
+        /></a>
       </div>
     </div>
   </div>

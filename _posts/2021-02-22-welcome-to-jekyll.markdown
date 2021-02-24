@@ -1,5 +1,6 @@
 ---
 layout: posts
-title:  Coin Blog Introduction
+title: Coin Blog Introduction
 ---
+
 First Post

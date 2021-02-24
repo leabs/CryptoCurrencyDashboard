@@ -1,54 +1,64 @@
-html{
-    background: whitesmoke;
+html {
+  background: whitesmoke;
 }
 .bitcoin-box {
-    background-image: url("../img/bitcoin.png");
-    /* The image used */
-    background-color: #fff;
-    /* Used if the image is unavailable */
-    height: 150px;
-    /* You must set a specified height */
-    background-position: 140px;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: 260px;
-    /* Resize the background image to cover the entire container */
-    opacity: 1;
+  background-image: url("../img/bitcoin.png");
+  /* The image used */
+  background-color: #fff;
+  /* Used if the image is unavailable */
+  height: 150px;
+  /* You must set a specified height */
+  background-position: 160px;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 230px;
+  /* Resize the background image to cover the entire container */
+  opacity: 1;
 }
 
 .litecoin-box {
-    background-image: url("../img/litecoin.png");
-    /* The image used */
-    background-color: #fff;
-    /* Used if the image is unavailable */
-    height: 150px;
-    /* You must set a specified height */
-    background-position: 140px;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: 260px;
-    /* Resize the background image to cover the entire container */
-    opacity: 1;
+  background-image: url("../img/litecoin.png");
+  /* The image used */
+  background-color: #fff;
+  /* Used if the image is unavailable */
+  height: 150px;
+  /* You must set a specified height */
+  background-position: 160px;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 230px;
+  /* Resize the background image to cover the entire container */
+  opacity: 1;
 }
 
 .ethereum-box {
-    background-image: url("../img/ethereum.png");
-    /* The image used */
-    background-color: #fff;
-    /* Used if the image is unavailable */
-    height: 150px;
-    /* You must set a specified height */
-    background-position: 140px;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: 260px;
-    /* Resize the background image to cover the entire container */
-    opacity: 1;
+  background-image: url("../img/ethereum.png");
+  /* The image used */
+  background-color: #fff;
+  /* Used if the image is unavailable */
+  height: 150px;
+  /* You must set a specified height */
+  background-position: 160px;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 230px;
+  /* Resize the background image to cover the entire container */
+  opacity: 1;
 }
 
-.has-text-center{
-    text-align: center;
+.has-text-center {
+  text-align: center;
+}
+
+.refresh-button {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .refresh-button {
+    margin-top: 0;
+  }
 }

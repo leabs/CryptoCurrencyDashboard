@@ -4,51 +4,7 @@ layout: home
 
 {% include header.html %}
 <!--Homepage dashboard-->
-<section class="section">
-  <div class="container">
-  <h4 class="h4">
-    Current Prices
-    <a onClick="window.location.reload()"
-      ><img src="assets/img/refresh.png" style="height: 20px" alt="refresh" />
-    </a>
-  </h4>
-  <br />
-  <div class="columns">
-    <!--Bitcoin card current price-->
-    <div class="column">
-      <div class="box bitcoin-box">
-        <div class="h3">Bitcoin(BTC)</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="btc_val" class="h4 kpi-value"></div>
-      </div>
-    </div>
-    <!--Ethereum card current price-->
-    <div class="column">
-      <div class="box ethereum-box">
-        <div class="h3">Ethereum</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="eth_val" class="h4 kpi-value"></div>
-      </div>
-    </div>
-    <!--Litecoin card current Price-->
-    <div class="column">
-      <div class="box litecoin-box">
-        <div class="h3">Litecoin(LTC)</div>
-        <div class="h5">(Price in USD)</div>
-        <div id="ltc_val" class="h4 kpi-value"></div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="columns">
-    <div class="column">
-      <div class="box">
-        <div id="chart-container"></div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include prices.html %}
 </div>
 {% include about.html %}
   <div class="columns">
